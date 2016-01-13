@@ -1,0 +1,57 @@
+html {
+    -webkit-tap-highlight-color: rgba(0,0,0,0)
+}
+
+body,p,ul,h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+    padding: 0;
+    font-weight: normal
+}
+
+body {
+    text-align: left;
+    background: #e6e6e6;
+    font-family: sans-serif;
+    width: 6.4rem;
+    margin: 0 auto;
+    overflow-x: hidden;
+    color: #2a2a2a
+}
+
+@media screen and (max-width: 321px) {
+    body {
+        font-size:16px
+    }
+}
+
+@media screen and (min-width: 321px) and (max-width:400px) {
+    body {
+        font-size:17px
+    }
+}
+
+@media screen and (min-width: 400px) {
+    body {
+        font-size:19px
+    }
+}
+
+
+li {
+    list-style: none
+}
+
+
+a,a:visited {
+    text-decoration: none;
+    color: #2a2a2a
+}
+
+.clearfix:after {
+    clear: both;
+    height: 0;
+    overflow: hidden;
+    display: block;
+    visibility: hidden;
+    content: "."
+}
