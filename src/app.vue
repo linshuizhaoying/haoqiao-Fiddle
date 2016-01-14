@@ -7,10 +7,32 @@
   height: 300px;
   width: 100%;
 }
+.link{
+  display: inline-block;
+  margin-left: 40px;
+}
 </style>
 
 <template>
-
+  <div class="link">
+    <h3>Javascript文件</h3>
+    <select name="javascript" id="out-js">
+      <option value="./tools/js/jquery-2.1.4.min.js">
+        Jquery-2.1.4
+      </option>
+      <option value="./tools/js/zepto.min.js">
+        Zepto.min
+      </option>
+    </select>
+  </div>
+  <div class="link">
+    <h3>Css文件</h3>
+    <select name="javascript" id="out-css">
+      <option value="./tools/css/animate.css">
+        Animate
+      </option>
+    </select>
+  </div>
   <section>
     
     <div class="html">
@@ -38,10 +60,11 @@
 
 module.exports = {
   data:{
-  
+    
   },
   ready:function(){
- 
+     console.log($('#out-js option:selected').val());
+     console.log($('#out-css option:selected').val());
   },
   methods: {
   
